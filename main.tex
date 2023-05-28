@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\huge\textcolor{green}{\textbf{\MakeUppercase{Leonardo}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Pozzati}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge \mbox{Senior Software Engineer} \linebreak \textcolor{red}{Embedded Systems}} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{10}{Hontenissestraat 45, \linebreak Tilburg}\\
+	\icon{Phone}{10}{0039 334 710 8340}\\
+	% \icon{At}{12}{\href{mailto:leon.pozzati@gmail.com}{Personal email}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	% \icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+	\icon{Github}{10}{\href{https://github.com/vaeVict1s}{github}}\\
+	\icon{LinkedIn}{10}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{linkedIn}}\\
+	\icon{At}{12}{\href{mailto:leon.pozzati@gmail.com}{email}}
+	% \icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\mbox{I am an Italian Senior Software Engineer,} 
+	\linebreak
+	\mbox{with a sound background in Mathematical Physics.}
+	\mbox{I worked on several fields, before moving to the Netherlands}
+	\linebreak
+	\mbox{on 6th of April 2022.}
+	\linebreak
+	\mbox{I would like to think at myself like a serious professional,}
+	\linebreak
+	\mbox{strongly driven and project oriented.}
+	\linebreak
+	\mbox{Since I have lot to learn, I find interesting and challenging}
+	\linebreak
+	\mbox{to grow with junior Engineers along the way.}
+	\linebreak
+	\mbox{I've been told I could make outstanding presentations.}
+	\linebreak
+	\mbox{But I am better in person.}
+	
+	% \lorem \lorem \lorem \lorem \lorem\\ % Dummy text
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Bash}{95}
+		\baritem{C / C++}{90}
+		\baritem{PhP/MySQL}{65}
+		\baritem{Bootstrap}{70}
+		\baritem{Git}{90}
+		\baritem{LaTeX}{95}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{6/Linux, 5/Windows, 6/Shell,  4/IDEs, 5/Office Suite, 6/SAFe} %, 5/Office Suite}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2022 -- 2023}
+		{Senior Software Engineer}
+		{TOPIC Embedded Systems.}
+		{\mbox{I was assigned to ASML as part of a recently out-farmed team;} \linebreak \mbox{my main contribution was helping the robustness of the latter}, \linebreak \mbox{implementing CICD in the w.o.w. of the team I was in and in collaboration with local T\&I,} 
+		\linebreak
+		\mbox{and developing almost the whole design of a State Machine Framework.} \linebreak \texttt{C / C++}\slashsep\texttt{Bash}\slashsep\texttt{CICD}\slashsep\texttt{Enterprise Architect}}
+	\entry
+	    {2018 -- 2021}
+	    {Senior Software Engineer}
+	    {ProMarket}
+	    {I worked for the fintech startup ProMarket, developing
+both in Python and in C++ a networking framework between the investment client and the strategy-computing
+server. The framework made use of the ZeroMq library.
+I also developed in Python a sentiment analysis engine.} 
+	\entry
+		{2015 -- 2018} %\\\footnotesize{part time}}
+		{Software Developer}
+		{Famous Eshop Inc.}
+        {I worked for Eveilidia, an IT company. My job was the
+debugging and mantaininng of web applications’ back-end
+running on Linux Fedora.}
+	\entry
+		{2012 -- 2013\\\footnotesize{freelance}}
+		{Developer and Tester}
+		{Ubuntu Italian Community Forum}
+        {I proposed the idea and took part in the development of a
+command line parser, similar to Python argparse module
+but coded in C.
+The code has been released for free download and use
+https://github.com/Vincenzo1968/myoptParser}
+
+	\entry
+		{2006 -- open\\\footnotesize{part time}}
+		{Owner}
+		{Almalu Trastevere - Cocktail Bar}
+		{I started up and managed with my family a business in entertainment 
+mainly frequented by English speaking customers. This
+gave me, moreover, the opportunity of improving my language skills on a daily basis. This business is still working
+and mainly managed by my older brother, Alessio, who is managed by our mother.}
+		% {\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MariaDB}\slashsep\texttt{Linux}}
+	\entry
+		{2010 -- 2012} %\\\footnotesize}
+		{PHP - MySQL Developer}
+		{SirCup}
+		{I worked for SirCup, a company which organizes sport
+tournaments. I developed and mantained MySQL databases
+and relative data handling and presentation PHP routines,
+specifically for their soccer tournaments. \texttt{PHP}\slashsep\texttt{MySQL}}
+		% {\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{Laravel}}
+	\entry
+	    { Miscellanea }
+	    {}
+	    {}
+	    {After I won a scholarship, I worked for a year as a librarian
+in Roma 3 University library \linebreak I’ve been tutoring students in mathematics and physics for
+several years. I prepare them for any grade level, especially
+from high school to univeristy. \linebreak I worked for a couple of years in a museum (Chiostro del
+Bramante), keeping watch on artworks during exhibition.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{}
+		{Master's Degree in Mathematical Physics}
+		{Universita' Roma Tre}
+		{My research work concerns Non-Equilibrium Statistical Mechanics. Specifically,
+I focus on the relaxation to equilibrium of metastable thermodynamic systems.
+I’m therefore used to implement mathematical models of physical systems, both
+stochastic and deterministic.}
+	\entry
+		{}
+		{Bachelor's Degree in Physics}
+		{Universita' Roma Tre}
+		{Physics}
+	\entry
+		{}
+		{High School}
+		{Pio IX}
+		{Humanities focuse highschool}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{Italian} - native\\
+	\textbf{English} - C1 IELTS Based Result\\
+	\textbf{Dutch} - Self Studying
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	I love Art in almost any expression, open air activities when it comes to sport and hicking, cooking \linebreak and reading when home.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	I try to be a better version of me \linebreak every day, working in charities and \linebreak being open mostly. 
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
