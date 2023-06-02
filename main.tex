@@ -21,7 +21,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
-
+\usepackage{qrcode}
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -41,15 +41,15 @@
 	
 	\vspace{6pt}
 	
-	{\huge \mbox{Senior Software Engineer} \linebreak \textcolor{red}{Embedded Systems}} % Career or current job title
+	{\huge \mbox{\textcolor{red}{Senior Software Engineer}} \linebreak \textcolor{blue}{Embedded Systems}} % Career or current job title
 \end{minipage}
 \begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{MapMarker}{10}{Hontenissestraat 45, \linebreak Tilburg}\\
-	\icon{Phone}{10}{0039 334 710 8340}\\
+	\icon{Home}{8}{\small\href{https://goo.gl/maps/fXe4xLSt1rT5tuoG6}{Hontenissestraat 45, Tilburg}}\\
+	\icon{Phone}{8}{\small +31 6 25112398}\\
 	% \icon{At}{12}{\href{mailto:leon.pozzati@gmail.com}{Personal email}}\\	
 \end{minipage}
 \begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
@@ -58,9 +58,9 @@
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
 	% \icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
-	\icon{Github}{10}{\href{https://github.com/vaeVict1s}{github}}\\
-	\icon{LinkedIn}{10}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{linkedIn}}\\
-	\icon{At}{12}{\href{mailto:leon.pozzati@gmail.com}{email}}
+	\icon{Github}{8}{\href{https://github.com/vaeVict1s}{github}}\\
+	\icon{Linkedin}{8}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{linkedIn}}\\
+	\icon{At}{8}{\href{mailto:leon.pozzati@gmail.com}{email}}
 	% \icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
 \end{minipage}
 
@@ -78,21 +78,21 @@
 	\mbox{I am an Italian Senior Software Engineer,} 
 	\linebreak
 	\mbox{with a sound background in Mathematical Physics.}
-	\mbox{I worked on several fields, before moving to the Netherlands}
+	\mbox{I worked on several fields, before moving to}
 	\linebreak
-	\mbox{on 6th of April 2022.}
+	\mbox{the Netherlands on 6th of April 2022.}
 	\linebreak
 	\mbox{I would like to think at myself like a serious professional,}
 	\linebreak
-	\mbox{strongly driven and project oriented.}
+	\mbox{strongly driven and project oriented. Nevertheless, }
 	\linebreak
-	\mbox{Since I have lot to learn, I find interesting and challenging}
+	\mbox{I have lot to learn and I find interesting and challenging}
 	\linebreak
 	\mbox{to grow with junior Engineers along the way.}
 	\linebreak
 	\mbox{I've been told I could make outstanding presentations.}
 	\linebreak
-	\mbox{But I am better in person.}
+	\mbox{I am better in person though.}
 	
 	% \lorem \lorem \lorem \lorem \lorem\\ % Dummy text
 \end{minipage}
@@ -124,40 +124,34 @@
 		{2022 -- 2023}
 		{Senior Software Engineer}
 		{TOPIC Embedded Systems.}
-		{\mbox{I was assigned to ASML as part of a recently out-farmed team;} \linebreak \mbox{my main contribution was helping the robustness of the latter}, \linebreak \mbox{implementing CICD in the w.o.w. of the team I was in and in collaboration with local T\&I,} 
+		{\mbox{I was assigned to ASML as part of a recently out-farmed team; my main contribution was} \linebreak \mbox{helping the robustness of the latter, testing and integrating already developed modules,}  \linebreak \mbox{implementing CICD in the w.o.w. of the team in collaboration with local T\&I team} 
 		\linebreak
-		\mbox{and developing almost the whole design of a State Machine Framework.} \linebreak \texttt{C / C++}\slashsep\texttt{Bash}\slashsep\texttt{CICD}\slashsep\texttt{Enterprise Architect}}
+		\mbox{and developing almost the whole design of a State Machine Framework.} \linebreak \texttt{C / C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{CICD}\slashsep\texttt{UML and EA}\slashsep\texttt{SAFe}}
 	\entry
 	    {2018 -- 2021}
 	    {Senior Software Engineer}
 	    {ProMarket}
-	    {I worked for the fintech startup ProMarket, developing
-both in Python and in C++ a networking framework between the investment client and the strategy-computing
-server. The framework made use of the ZeroMq library.
-I also developed in Python a sentiment analysis engine.} 
+	    {\mbox{I worked for the fintech startup ProMarket, developing in Python and in C++ a networking} \linebreak \mbox{framework between the investment clients and the strategy-computing
+servers} \linebreak \mbox{on top of the ZeroMq library. I also developed in Python a sentiment analysis engine.} \linebreak \texttt{C / C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{Networking}\slashsep\texttt{ZeroMQ}}
 	\entry
 		{2015 -- 2018} %\\\footnotesize{part time}}
 		{Software Developer}
-		{Famous Eshop Inc.}
-        {I worked for Eveilidia, an IT company. My job was the
-debugging and mantaininng of web applications’ back-end
-running on Linux Fedora.}
+		{Eveilidia}
+        {\mbox{I worked for Eveilidia, an IT company. My job was the debugging and mantaining of} \linebreak  \mbox{web applications’ back-end
+running on Linux Fedora.} \linebreak \texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{Fedora Linux}\slashsep\texttt{Web Services}}
 	\entry
 		{2012 -- 2013\\\footnotesize{freelance}}
 		{Developer and Tester}
 		{Ubuntu Italian Community Forum}
-        {I proposed the idea and took part in the development of a
-command line parser, similar to Python argparse module
-but coded in C.
-The code has been released for free download and use
-https://github.com/Vincenzo1968/myoptParser}
+        {\mbox{I proposed the idea and took part in the development of a command line parser, a C version of} \linebreak \mbox{the Python argparse module.} 
+         \linebreak \mbox{It is available for free download and use on GitHub: \href{https://github.com/Vincenzo1968/myoptParser}{Vincenzo1968/myoptParser}}
+         \linebreak \texttt{Python / C}\slashsep\texttt{Bash}\slashsep\texttt{FOSS}\slashsep\texttt{Remote Colab}}
 
 	\entry
 		{2006 -- open\\\footnotesize{part time}}
 		{Owner}
 		{Almalu Trastevere - Cocktail Bar}
-		{I started up and managed with my family a business in entertainment 
-mainly frequented by English speaking customers. This
+		{My family started from scratch a business in entertainment, mainly frequented by English speaking customers. This
 gave me, moreover, the opportunity of improving my language skills on a daily basis. This business is still working
 and mainly managed by my older brother, Alessio, who is managed by our mother.}
 		% {\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MariaDB}\slashsep\texttt{Linux}}
@@ -168,17 +162,16 @@ and mainly managed by my older brother, Alessio, who is managed by our mother.}
 		{I worked for SirCup, a company which organizes sport
 tournaments. I developed and mantained MySQL databases
 and relative data handling and presentation PHP routines,
-specifically for their soccer tournaments. \texttt{PHP}\slashsep\texttt{MySQL}}
+specifically for their soccer tournaments.}
 		% {\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{Laravel}}
 	\entry
 	    { Miscellanea }
 	    {}
 	    {}
-	    {After I won a scholarship, I worked for a year as a librarian
-in Roma 3 University library \linebreak I’ve been tutoring students in mathematics and physics for
-several years. I prepare them for any grade level, especially
-from high school to univeristy. \linebreak I worked for a couple of years in a museum (Chiostro del
-Bramante), keeping watch on artworks during exhibition.}
+	    {\mbox{After I won a scholarship, I worked for a year as a librarian
+in Roma 3 University library.} \linebreak \mbox{I’ve been tutoring students in mathematics and physics for
+several years, preparing them for} \linebreak \mbox{any grade level, especially
+from high school to univeristy.} \linebreak \mbox{I worked for a couple of years at Chiostro del Bramante, a museum in Roma, keeping watch on} \linebreak \mbox{artworks during exhibitions.}}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -205,7 +198,7 @@ stochastic and deterministic.}
 		{}
 		{High School}
 		{Pio IX}
-		{Humanities focuse highschool}
+		{Humanities-focused highschool}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -239,5 +232,17 @@ stochastic and deterministic.}
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+\cvsect{Contacts}
 
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+    \qrcode[height=0.3in]{https://github.com/vaeVict1s}                           \quad \icon{Github}{10}{\href{https://github.com/vaeVict1s}{ \small github.com/vaeVict1s}}\\ \\
+	\qrcode[height=0.3in]{https://www.linkedin.com/in/leonardo-pozzati-4769471bb} \quad \icon{Linkedin}{10}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{ \small in/leonardo-pozzati-4769471bb}}\\ \\
+    \qrcode[height=0.3in]{mailto:leon.pozzati@gmail.com}                          \quad \icon{At}{10}{\href{mailto:leon.pozzati@gmail.com}{ \small leon.pozzati@gmail.com}}
+
+\end{minipage}
+\hfill
 \end{document}
