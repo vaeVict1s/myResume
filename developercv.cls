@@ -34,7 +34,10 @@
 
 \setlength{\parindent}{0mm} % Suppress paragraph indentation
 
-\usepackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
+% Moved into the main.tex
+% in order to add specific pdfinfo 
+% about the resume PDF
+% \usepackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
 
 \newcommand{\lorem}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.} % Dummy text
 
@@ -59,6 +62,12 @@
 	headsep=0.5cm, % Space from the top margin to the baseline of the header
 	%showframe, % Uncomment to show how the type block is set on the page
 }
+
+%----------------------------------------------------------------------------------------
+%	WORD FLAGS
+%----------------------------------------------------------------------------------------
+
+\usepackage{worldflags} % Required to display flags
 
 %----------------------------------------------------------------------------------------
 %	FONTS
