@@ -59,8 +59,8 @@
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
 	\icon{Home}{12}{\small\href{https://goo.gl/maps/fXe4xLSt1rT5tuoG6}{Hontenissestraat 45, Tilburg}}\\
-    \icon{Phone}{6}{\small \href{tel:+31 6 25112398}{\worldflag[width=2mm]{NL} +31 6 25112398}} \\
-    \icon{Phone}{6}{\small \href{tel:+39 334 710 8340}{\worldflag[width=2mm]{IT} +39 334 710 8340}}
+    \icon{Phone}{6}{\small \href{tel:+39 334 710 8340}{\worldflag[width=2mm]{IT} \texttt{+39\,334\,710\,8340}}} \\
+    \icon{Phone}{6}{\small \href{tel:+31 6 29808909}{\worldflag[width=2mm]{NL} \texttt{+31\,6\,2980\,8909}}} \\
 \end{minipage}
 \begin{minipage}[t]{0.25\textwidth} % 25% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
@@ -92,11 +92,13 @@
 	\linebreak
 	\mbox{I would like to think at myself like a serious professional,}
 	\linebreak
-	\mbox{strongly driven and project oriented. Nevertheless, }
+	\mbox{strongly driven and project oriented.}
 	\linebreak
-	\mbox{I have lot to learn and I find interesting and challenging}
+	\mbox{I have a lot to learn and I find interesting and challenging}
 	\linebreak
-	\mbox{to grow with junior Engineers along the way.}
+	\mbox{to grow both with junior and more experienced Engineers,}
+    \linebreak
+    \mbox{being able to focus on solitary projects as well.}
 	\linebreak
 	\mbox{I've been told I could make outstanding presentations.}
 	\linebreak
@@ -108,17 +110,18 @@
 \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\begin{barchart}{5.5}
-		\baritem{Bash}{95}
-		\baritem{C / C++}{90}
-		\baritem{PhP/MySQL}{65}
-		\baritem{Bootstrap}{70}
-		\baritem{Git}{90}
-		\baritem{LaTeX}{95}
+		\baritem{\textbf{Bash}}{95}
+		\baritem{\textbf{C / C++}}{90}
+		\baritem{\textbf{Python}}{90}
+		\baritem{\textbf{PhP/MySQL}}{65}
+		\baritem{\textbf{Papyrus}}{80}
+		\baritem{\textbf{Git}}{90}
+		\baritem{\textbf{LaTeX}}{95}
 	\end{barchart}
 \end{minipage}
 
 \begin{center}
-	\bubbles{6/Linux, 5/Windows, 6/Shell,  4/IDEs, 5/Office Suite, 6/SAFe} %, 5/Office Suite}
+	\bubbles{6/\textbf{Linux}, 5/\textbf{Windows}, 6/\textbf{Shell},  5/\textbf{IDEs}, 5/\textbf{Office}, 6/\textbf{SAFe}} %, 5/Office Suite}
 \end{center}
 
 %----------------------------------------------------------------------------------------
@@ -213,17 +216,22 @@ stochastic and deterministic.}
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.2\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 
 	\cvsect{Languages}
-	
-	\textbf{Italian} - native\\
-	\textbf{English} - C1 IELTS Based Result\\
-	\textbf{Dutch} - Self Studying
+	\begin{tabular}{l r}
+    \textbf{Italian} & \,native \\
+	\textbf{English     } & \,C1\\
+    \textbf{Dutch} & \,Self Studying
+
+    \end{tabular}
+	% \textbf{Italian} - native\\
+	% \textbf{English} - C1 IELTS Based Result\\
+	% \textbf{Dutch} - Self Studying
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.35\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	\cvsect{Hobbies}
@@ -231,18 +239,20 @@ stochastic and deterministic.}
 	I love Art in almost any expression, open air activities when it comes to sport and hicking, cooking \linebreak and reading when home.
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.35\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	\cvsect{Non profit}
 	
-	I try to be a better version of me \linebreak every day, working in charities and \linebreak being open mostly. 
+	I try to be a better version of me \linebreak every day, working in charities and \linebreak \mbox{being open mostly.} \linebreak
+    I am currently involved in the Linux group at Lochal in Tilburg.
 \end{minipage}
+
 
 %----------------------------------------------------------------------------------------
 \begin{minipage}[t]{0.5\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-\cvsect{Contacts}
+\cvsect{Socials}
 
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
@@ -251,6 +261,8 @@ stochastic and deterministic.}
     
     
 	\qrcode[height=0.3in]{https://www.linkedin.com/in/leonardo-pozzati-4769471bb} \quad \icon{Linkedin}{10}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{ \small in/leonardo-pozzati-4769471bb}}\\ \\
+
+
     \qrcode[height=0.3in]{mailto:leon.pozzati@gmail.com}                          \quad \icon{At}{10}{\href{mailto:leon.pozzati@gmail.com}{ \small leon.pozzati@gmail.com}}
 
 \end{minipage}
