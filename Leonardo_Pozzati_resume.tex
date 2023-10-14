@@ -27,6 +27,7 @@
 
 
 \usepackage{qrcode} % Required to generate QR code of the link to FontAwesome5 icons
+\usepackage{xcolor}
 \usepackage[pdfauthor={Leonardo Pozzati},
             pdftitle={Leonardo Pozzati - Resume},
             pdfsubject={This is the outstanding resume of Leonardo Pozzati},
@@ -36,16 +37,22 @@
 \definecolor{greenForName}{RGB}{0,140,69}         
 \definecolor{ItalianRed}{RGB}{205, 33, 42}       
 \definecolor{DutchBlue}{RGB}{0, 61, 165}           
-\newcommand{\myHilight}[2]{\textit{\color{#1}{#2}}}
+\definecolor{shadecolor}{RGB}{0,140,69}      
+\definecolor{textcolor}{RGB}{0, 61, 165}      
 
 
+\usepackage[skins]{tcolorbox}
+\definecolor{tpgray}{gray}{0.90}
+\newtcbox\tcbtp{hbox, on line, colback=tpgray, enhanced, frame hidden, boxrule=0pt, 
+    top=-2pt, bottom=-2pt, right=-2pt, left=-2pt, rounded corners}
+\newcommand{\myHilight}[2]{\tcbtp{\textit{\color{#1}{#2}}}}
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+\begin{minipage}[t]{0.55\textwidth} % It should be 45% of the page width for name, increased to 55% to have the next minipage aligned with the rest of the document
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% If your name is very short, use just one of the lines below
@@ -58,6 +65,10 @@
 	
 	{\mbox{\textcolor{ItalianRed}{\textbf{\,\,\,Senior Software Engineer}}} \linebreak \textcolor{DutchBlue}{\textbf{{\,\,\,Embedded Systems}}}} % Career or current job title
 \end{minipage}
+%~ \hfill % Whitespace between
+\begin{minipage}[t]{0.05\textwidth} % 40% of the page width for the introduction text
+\end{minipage}
+%~ \hfill % Whitespace between
 \begin{minipage}[t]{0.30\textwidth} % 30% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
@@ -106,12 +117,15 @@
     \linebreak
     \mbox{being able to focus on solitary projects as well.}
 	\linebreak
-	\mbox{I've been told I could make outstanding presentations.}
+	\mbox{I've been told I can make outstanding presentations.}
 	\linebreak
 	\mbox{I am better in person though.}
 \end{minipage}
 \hfill % Whitespace between
-\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+\begin{minipage}[t]{0.15\textwidth} % ghost minipage added to better separate the two displayed
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.45\textwidth} % 50% of the page for the skills bar chart
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\begin{barchart}{5.5}
 		\baritem{\textbf{Bash}}{95}
@@ -139,16 +153,16 @@
 		{2022 -- 2023}
 		{Senior Software Engineer}
 		{TOPIC Embedded Systems.}
-		{\mbox{I was assigned to \textcolor{DutchBlue}{ASML} as part of a \myHilight{DutchBlue}{recently out-farmed team}; 
+		{\mbox{I was assigned to \textcolor{DutchBlue}{\textbf{ASML}} as part of a recently \myHilight{textcolor}{out-farmed team}; 
         my main contribution was}
         \linebreak 
-        \mbox{helping the \myHilight{DutchBlue}{robustness} of the latter, 
-        \myHilight{DutchBlue}{implementing, testing and integrating} modules,} 
+        \mbox{helping the \myHilight{textcolor}{robustness} of the latter, 
+        \myHilight{textcolor}{implementing, testing and integrating modules},} 
         \linebreak 
-        \mbox{\myHilight{DutchBlue}{implementing CICD} in the w.o.w. of the team 
+        \mbox{\myHilight{textcolor}{implementing CICD} in the w.o.w. of the team 
         in collaboration with the local T\&I team} 
 		\linebreak
-		\mbox{and developing the \myHilight{DutchBlue}{design of a State Machine Framework}.} 
+		\mbox{and \myHilight{textcolor}{developing the design of a State Machine Framework}.} 
         \linebreak{}
         \texttt{C / C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{CICD}\slashsep\texttt{UML and EA}\slashsep\texttt{SAFe}}
 
@@ -156,14 +170,14 @@
 	    {2018 -- 2021}
 	    {Senior Software Engineer}
 	    {ProMarket}
-	    {\mbox{I worked for the \myHilight{DutchBlue}{fintech startup} ProMarket, 
-        developing in Python and in C++ a \myHilight{DutchBlue}{networking}} 
+	    {\mbox{I worked for the \myHilight{textcolor}{fintech startup} ProMarket, 
+        developing in Python and in C++ a \myHilight{textcolor}{networking}} 
         \linebreak 
-        \mbox{\myHilight{DutchBlue}{framework} between the investment clients 
+        \mbox{\myHilight{textcolor}{framework} between the investment clients 
         and the strategy-computing servers}
         \linebreak{}
-        \mbox{on top of the \myHilight{DutchBlue}{ZeroMq} library. 
-        I also developed in Python a \myHilight{DutchBlue}{sentiment analysis engine}.}
+        \mbox{on top of the \myHilight{textcolor}{ZeroMq} library. 
+        I also developed in Python part of a \myHilight{textcolor}{sentiment analysis engine}.}
         \linebreak{}
         \texttt{C / C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{Networking}\slashsep\texttt{ZeroMQ}}
 
@@ -172,23 +186,23 @@
 		{Software Developer}
 		{Eveilidia}
         {\mbox{I worked for Eveilidia, an IT company. My job was the 
-        \myHilight{DutchBlue}{debugging and maintaining} of} 
+        \myHilight{textcolor}{debugging and maintaining} of} 
         \linebreak  
-        \mbox{web applications’ back-end running on Linux Fedora.}
-        \linebreak{}
+        \mbox{\myHilight{textcolor}{web applications’ back-end} running on Linux Fedora.}
+        \linebreak{}    
         \texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{Fedora Linux}\slashsep\texttt{Web Services}}
 
 	\entry
 		{2012 -- 2013\\\footnotesize{freelance}}
 		{Developer and Tester}
 		{Ubuntu Italian Community Forum}
-        {\mbox{I proposed the \myHilight{DutchBlue}{idea} and took part in the 
-        \myHilight{DutchBlue}{development} of a \myHilight{DutchBlue}{command line parser}, 
+        {\mbox{I proposed the \myHilight{textcolor}{idea} and took part in the 
+        \myHilight{textcolor}{development} of a \myHilight{textcolor}{command line parser}, 
         a C version of}
         \linebreak{}
-        \mbox{the Python \myHilight{DutchBlue}{argparse module}.} 
+        \mbox{the Python \myHilight{textcolor}{argparse module}.} 
         \linebreak{}
-        \mbox{It is available for \myHilight{DutchBlue}{free download and use} 
+        \mbox{It is available for \myHilight{textcolor}{free download and use} 
         on GitHub: \href{https://github.com/Vincenzo1968/myoptParser}{Vincenzo1968/myoptParser}}
         \linebreak{}
         \texttt{Python / C}\slashsep\texttt{Bash}\slashsep\texttt{FOSS}\slashsep\texttt{Remote Colab}}
@@ -200,31 +214,33 @@
 		{My family started from scratch a business in entertainment, 
         mainly frequented by \mbox{English-speaking} customers. This gave me, moreover, 
         the opportunity of improving my language skills on a daily basis. 
-        This business is still working and mainly managed by my older brother, 
-        Alessio, who is managed by our mother.}
+        This business is still working and managed by my mother and older brother.}
 
 	\entry
 		{2010 -- 2012} %\\\footnotesize}
 		{PHP - MySQL Developer}
 		{SirCup}
-		{I worked for SirCup, a company which organizes sport 
-        tournaments. I \myHilight{DutchBlue}{developed and maintained MySQL databases} 
-        and relative \myHilight{DutchBlue}{data-handling and presentation PHP routines}, 
-        specifically for their soccer tournaments.}
-		% {\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{Laravel}}
-
-	\entry
+		{\mbox{For SirCup, a company which organizes sport 
+        tournaments,} I \myHilight{textcolor}{developed and maintained MySQL} databases 
+        and relative \myHilight{textcolor}{data-handling and presentation PHP routines}, 
+        specifically for their soccer tournaments.
+        \linebreak{}
+        \texttt{PHP / MySQL}\slashsep\texttt{data-handling}}
+	
+    \entry
 	    { Miscellanea }
 	    {}
 	    {}
-	    {\mbox{After I won a scholarship, I worked for a year as a \myHilight{DutchBlue}{librarian} 
-        in Roma 3 University library.} \linebreak \mbox{I’ve been \myHilight{DutchBlue}{tutoring students} 
-        in mathematics and physics for several years, preparing them for} 
+	    {\mbox{After I won a scholarship, I worked for a year as a \myHilight{textcolor}{librarian} 
+        in Roma 3 University library.} \linebreak \mbox{I’ve been \myHilight{textcolor}{tutoring students 
+        in mathematics and physics} for several years, preparing them for} 
         \linebreak 
         \mbox{any grade level, especially from high school to univeristy.}
         \linebreak{}
         \mbox{I worked for a couple of years at Chiostro del Bramante, 
-        a museum in Roma, \myHilight{DutchBlue}{keeping watch on}} \linebreak \mbox{\myHilight{DutchBlue}{artworks} during exhibitions.}}
+        a museum in Roma,}
+        \linebreak
+        \myHilight{textcolor}{keeping watch on} \mbox{\myHilight{textcolor}{artworks} during exhibitions.}}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -238,13 +254,14 @@
 		{}
 		{Master's Degree in Mathematical Physics - 110/110 cum Laude}
 		{Universita' Roma Tre}
-		{My research work investigates the \myHilight{DutchBlue}{relaxation to the equilibrium} of a 
-        \myHilight{DutchBlue}{supersaturated gas} through a \myHilight{DutchBlue}{critical droplet} which triggers the phase transition into liquid.
+		{My research work investigates the \myHilight{textcolor}{relaxation to the equilibrium} of a 
+        \myHilight{textcolor}{supersaturated gas} through a \myHilight{textcolor}{critical droplet} 
+        which triggers the \myHilight{textcolor}{phase transition} into liquid.
         \newline 
-        After writing down both a stochastical and a deterministic \myHilight{DutchBlue}{mathematical model} 
-        of this \myHilight{DutchBlue}{metastable thermodynamic system}, 
+        After writing down both a stochastical and a deterministic \myHilight{textcolor}{mathematical model} 
+        of this \myHilight{textcolor}{metastable thermodynamic system}, 
         I wrote the C++ simulations, run them and carried out a massive data analysis in Python 
-        finding out interesting results in the context of \myHilight{DutchBlue}{Non-Equilibrium Statistical Mechanics}.}
+        finding out interesting results in the context of \myHilight{textcolor}{Non-Equilibrium Statistical Mechanics}.}
 	\entry
 		{}
 		{Bachelor's Degree in Physics}
@@ -276,6 +293,7 @@
 \hfill
 \begin{minipage}[t]{0.35\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+    
 	\cvsect{Hobbies}
     
 	I love Art, open air activities like horse riding and hicking, cooking and reading when home.
@@ -286,7 +304,7 @@
 	\cvsect{Non profit}
 	
     I try to be a better version of me \linebreak every day, working in charities and \linebreak \mbox{being open mostly.} \linebreak
-    % I am currently involved in the Linux group at Lochal in Tilburg.
+    I am currently volunteering in the Open Source DigiLab at Lochal in Tilburg.
 \end{minipage}
 
 \cvsect{Personal Projects}
@@ -294,34 +312,30 @@
     \entry{}
     {3D Scanner}
     {}
-    {Along with the \myHilight{DutchBlue}{Open Source Lab at Lochal Library} in Tilburg, 
-    I am building a 3D scanner based on the \myHilight{DutchBlue}{OpenScan} project.
+    {Along with the \myHilight{textcolor}{Open Source Lab at Lochal Library} in Tilburg, 
+    I am building a 3D scanner based on the \myHilight{textcolor}{OpenScan} project.
     \newline{}
     The idea is to make this scanner available to people interested 
-    in 3D printing to help them have fun with their projects.}
+    in 3D scanning and printing to help them have fun with their projects.}
     \entry{}
     {Domotics and IoT}
     {}
-    {I am assembling a \myHilight{DutchBlue}{modular home assitant}, both gathering what is already 
-    available through \myHilight{DutchBlue}{open source communities} and developing functionalities myself.
+    {I am assembling a \myHilight{textcolor}{modular home assitant},
+    in a project which started with a manager for the garden and the automation of an Ikea roller blind.
     \newline
-    This project started with a manager for the garden and the automation of an Ikea roller blind.
-    \newline
-    I am also assembling a \myHilight{DutchBlue}{drone} as the standalone hardware 
-    for this assistant: the chassis is \myHilight{DutchBlue}{3D-printed} with the support of Lochal library,  
-    prototype schematics and circuit board's layout are made with \myHilight{DutchBlue}{KiKad} 
-    and the software runs on a \myHilight{DutchBlue}{Rasbperry Pi 4}.}    
+    The standalone hardware for this assistant is a drone: the chassis is \myHilight{textcolor}{3D-printed} with the support of Lochal library,  
+    prototype schematics and circuit board's layout are made with \myHilight{textcolor}{KiKad} 
+    and the software runs on a \myHilight{textcolor}{Rasbperry Pi 4}.}    
     \entry{}
     {Chat Bot Training}
     {}
-    {With the idea of \myHilight{DutchBlue}{training a chat bot on a specific domain}, 
-    I am writing down a bibliography of milestones in Software Engineering 
+    {With the idea of \myHilight{textcolor}{training a chat bot on a specific domain}, 
+    I am writing down a bibliography of books in Software Engineering 
     in order to feed the bot with them.
     \newline
-    This project is in its early stage and \myHilight{DutchBlue}{its purpose is mostly educative}.}
+    This project is in its early stage and \myHilight{textcolor}{its purpose is mostly educative}.}
 \end{entrylist}
 
-    
 
 %----------------------------------------------------------------------------------------
 \begin{minipage}[t]{0.5\textwidth}
