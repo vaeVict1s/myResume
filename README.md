@@ -1,8 +1,7 @@
 # myResume
 LaTeX files to generate my resume.  
-I uploaded here to track changes easier.
 
-This resume is based on the Developer CV.
+This resume is based on the Developer CV Template.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 % Developer CV  
