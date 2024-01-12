@@ -69,24 +69,25 @@
 \begin{minipage}[t]{0.05\textwidth} % 40% of the page width for the introduction text
 \end{minipage}
 %~ \hfill % Whitespace between
-\begin{minipage}[t]{0.30\textwidth} % 30% of the page width for the first row of icons
+\begin{minipage}[t]{0.25\textwidth} % 30% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{Home}{12}{\small\href{https://goo.gl/maps/fXe4xLSt1rT5tuoG6}{Hontenissestraat 45, Tilburg}}\\
+	%~ \icon{Home}{12}{\small\href{https://goo.gl/maps/fXe4xLSt1rT5tuoG6}{Hontenissestraat 45, Tilburg}}\\
+	\icon{Home}{12}{\small\href{https://goo.gl/maps/fXe4xLSt1rT5tuoG6}{Tilburg}}\\
     % In the third parameter, the text, there is an href to directly call the phone number and a flag of the country
     \icon{Phone}{6}{\small \href{tel:+393347108340}{\worldflag[width=2mm]{IT} \texttt{+39\,334\,710\,8340}}} \\
     \icon{Phone}{6}{\small \href{tel:+31629808909}{\worldflag[width=2mm]{NL} \texttt{+31\,6\,2980\,8909}}} \\
 \end{minipage}
-\begin{minipage}[t]{0.25\textwidth} % 25% of the page width for the second row of icons
+\begin{minipage}[t]{0.30\textwidth} % 25% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{Github}{8}{\href{https://github.com/vaeVict1s}{github}}\\
-	\icon{Linkedin}{8}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{linkedIn}}\\
-	\icon{At}{8}{\href{mailto:leon.pozzati@gmail.com}{email}}
+	%~ \icon{Github}{8}{\href{https://github.com/vaeVict1s}{github}}\\
+	%~ \icon{Linkedin}{8}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{linkedIn}}\\
+	\icon{At}{12}{\href{mailto:leon.pozzati@gmail.com}{\small leon.pozzati@gmail.com}}
 \end{minipage}
 
 \vspace{0.5cm}
@@ -115,11 +116,11 @@
 	\linebreak
 	\mbox{to grow both with junior and more experienced Engineers,}
     \linebreak
-    \mbox{being able to focus on solitary projects as well.}
+    \mbox{able to focus on solitary projects as well.}
 	\linebreak
-	\mbox{I've been told I can make outstanding presentations.}
-	\linebreak
-	\mbox{I am better in person though.}
+	%~ \mbox{I've been told I can make outstanding presentations.}
+	%~ \linebreak
+	%~ \mbox{I am better in person though.}
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.15\textwidth} % ghost minipage added to better separate the two displayed
@@ -131,15 +132,15 @@
 		\baritem{\textbf{Bash}}{95}
 		\baritem{\textbf{C / C++}}{90}
 		\baritem{\textbf{Python}}{90}
-		\baritem{\textbf{PhP/MySQL}}{65}
-		\baritem{\textbf{Papyrus}}{80}
+		\baritem{\textbf{Jenkins}}{95}
+		%~ \baritem{\textbf{PhP/MySQL}}{65}
+		%~ \baritem{\textbf{Papyrus}}{80}
 		\baritem{\textbf{Git}}{90}
-		\baritem{\textbf{LaTeX}}{95}
 	\end{barchart}
 \end{minipage}
 
 \begin{center}
-	\bubbles{6/\textbf{Linux}, 5/\textbf{Windows}, 6/\textbf{Shell},  5/\textbf{IDEs}, 5/\textbf{Office}, 6/\textbf{SAFe}} %, 5/Office Suite}
+	\bubbles{6/\textbf{Linux}, 5/\textbf{Windows}, 6/\textbf{UML},  5/\textbf{IDEs}, 5/\textbf{Office}, 6/\textbf{Agile}} %, 5/Office Suite}
 \end{center}
 
 %----------------------------------------------------------------------------------------
@@ -153,18 +154,26 @@
 		{2022 -- 2023}
 		{Senior Software Engineer}
 		{TOPIC Embedded Systems.}
-		{\mbox{I was assigned to \textcolor{DutchBlue}{\textbf{ASML}} as part of a recently \myHilight{textcolor}{out-farmed team}; 
-        my main contribution was}
+		{\mbox{I was assigned to \textcolor{DutchBlue}{\textbf{ASML}} as part of 
+        an \myHilight{textcolor}{out-farmed team} dedicated to the 
+        \myHilight{textcolor}{Safety and Diagnostic}} 
+        %~ my main contribution was}
+        \linebreak
+        \mbox{of the \myHilight{DutchBlue}{lithography systems}.}
+        \linebreak
+        \mbox{My main contribution was \myHilight{textcolor}{helping the team robustness}, 
+        \myHilight{textcolor}{implementing, testing and integrating}} 
         \linebreak 
-        \mbox{helping the \myHilight{textcolor}{robustness} of the latter, 
-        \myHilight{textcolor}{implementing, testing and integrating modules},} 
-        \linebreak 
-        \mbox{\myHilight{textcolor}{implementing CICD} in the w.o.w. of the team 
-        in collaboration with the local T\&I team} 
+        \mbox{both \myHilight{textcolor}{new and legacy code},
+        \myHilight{textcolor}{integrating CICD}  
+        in collaboration with the \myHilight{textcolor}{local T\&I team}} 
 		\linebreak
-		\mbox{and \myHilight{textcolor}{developing the design of a State Machine Framework}.} 
+		\mbox{and writing the 
+        \myHilight{textcolor}{software design for the High-NA EUV machine}.} 
         \linebreak{}
-        \texttt{C / C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{CICD}\slashsep\texttt{UML and EA}\slashsep\texttt{SAFe}}
+        \texttt{C/C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}
+                 \slashsep\texttt{CICD}\slashsep\texttt{UML}
+                 \slashsep\texttt{Agile}\slashsep\texttt{svn}\slashsep\texttt{testing}}
 
 	\entry
 	    {2018 -- 2021}
@@ -179,7 +188,8 @@
         \mbox{on top of the \myHilight{textcolor}{ZeroMq} library. 
         I also developed in Python part of a \myHilight{textcolor}{sentiment analysis engine}.}
         \linebreak{}
-        \texttt{C / C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{Networking}\slashsep\texttt{ZeroMQ}}
+        \texttt{C/C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}
+        \slashsep\texttt{Networking/ZMQ}\slashsep\texttt{ML}}
 
 	\entry
 		{2015 -- 2018} %\\\footnotesize{part time}}
@@ -208,15 +218,6 @@
         \texttt{Python / C}\slashsep\texttt{Bash}\slashsep\texttt{FOSS}\slashsep\texttt{Remote Colab}}
 
 	\entry
-		{2006 -- open\\\footnotesize{part time}}
-		{Owner}
-		{Almalu Trastevere - Cocktail Bar}
-		{My family started from scratch a business in entertainment, 
-        mainly frequented by \mbox{English-speaking} customers. This gave me, moreover, 
-        the opportunity of improving my language skills on a daily basis. 
-        This business is still working and managed by my mother and older brother.}
-
-	\entry
 		{2010 -- 2012} %\\\footnotesize}
 		{PHP - MySQL Developer}
 		{SirCup}
@@ -226,6 +227,15 @@
         specifically for their soccer tournaments.
         \linebreak{}
         \texttt{PHP / MySQL}\slashsep\texttt{data-handling}}
+
+	\entry
+		{2006 -- open\\\footnotesize{part time}}
+		{Owner}
+		{Almalu Trastevere - Cocktail Bar}
+		{My family started from scratch a business in entertainment, 
+        mainly frequented by \mbox{English-speaking} customers. This gave me, moreover, 
+        the opportunity of improving my language skills on a daily basis. 
+        This business is still working and managed by my mother and older brother.}
 	
     \entry
 	    { Miscellanea }
@@ -278,20 +288,20 @@
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.2\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 
 	\cvsect{Languages}
     
-	\begin{tabular}{l r}
-    \textbf{Italian} & \,native \\
-	\textbf{English     } & \,C1\\
+	\begin{tabular}{l l}
+    \textbf{Italian} \quad \quad & \,native \\
+	\textbf{English     } & \,C1 - Academic IELTS\\
     \textbf{Dutch} & \,Self Studying
 
     \end{tabular}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.35\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
     
 	\cvsect{Hobbies}
@@ -299,12 +309,12 @@
 	I love Art, open air activities like horse riding and hicking, cooking and reading when home.
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.35\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Non profit}
 	
     I try to be a better version of me \linebreak every day, working in charities and \linebreak \mbox{being open mostly.} \linebreak
-    I am currently volunteering in the Open Source DigiLab at Lochal in Tilburg.
+    %~ I am currently volunteering in the Open Source DigiLab at Lochal in Tilburg.
 \end{minipage}
 
 \cvsect{Personal Projects}
@@ -315,25 +325,23 @@
     {Along with the \myHilight{textcolor}{Open Source Lab at Lochal Library} in Tilburg, 
     I am building a 3D scanner based on the \myHilight{textcolor}{OpenScan} project.
     \newline{}
-    The idea is to make this scanner available to people interested 
-    in 3D scanning and printing to help them have fun with their projects.}
+    The idea is to have fun learning the fundamentals of 3D scanning and printing.}
     \entry{}
     {Domotics and IoT}
     {}
     {I am assembling a \myHilight{textcolor}{modular home assitant},
-    in a project which started with a manager for the garden and the automation of an Ikea roller blind.
+    in a project that started with a manager for the garden and the automation of an Ikea roller blind.
     \newline
-    The standalone hardware for this assistant is a drone: the chassis is \myHilight{textcolor}{3D-printed} with the support of Lochal library,  
-    prototype schematics and circuit board's layout are made with \myHilight{textcolor}{KiKad} 
-    and the software runs on a \myHilight{textcolor}{Rasbperry Pi 4}.}    
+    The frame is 3D-printed with the support of Lochal library,  
+    prototype schematics and circuit board's layout are made with \myHilight{textcolor}{KiKad}, 
+    and the software runs on a \myHilight{textcolor}{Rasbperry Pi 4}.}   
     \entry{}
     {Chat Bot Training}
     {}
-    {With the idea of \myHilight{textcolor}{training a chat bot on a specific domain}, 
-    I am writing down a bibliography of books in Software Engineering 
-    in order to feed the bot with them.
+    {In order to \myHilight{textcolor}{train a chat bot on a specific domain}, 
+    I am writing a Software Engineering Notebook with a massive list of references.
     \newline
-    This project is in its early stage and \myHilight{textcolor}{its purpose is mostly educative}.}
+    This project \myHilight{textcolor}{ purpose is mostly educative}.}
 \end{entrylist}
 
 
