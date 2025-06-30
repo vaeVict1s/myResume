@@ -25,7 +25,7 @@
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
 %----------------------------------------------------------------------------------------
 
-
+\usepackage{needspace}
 \usepackage{qrcode} % Required to generate QR code of the link to FontAwesome5 icons
 \usepackage{xcolor}
 \usepackage[pdfauthor={Leonardo Pozzati},
@@ -61,9 +61,9 @@
 	
 	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Pozzati}}}\normalfont}} % Last name
 	
-	\vspace{6pt}
+	%~ \vspace{6pt}
 	
-	{\mbox{\textcolor{ItalianRed}{\textbf{\,\,\,Senior Software Engineer}}}} % \linebreak \textcolor{DutchBlue}{\textbf{{\,\,\,Embedded Systems}}}} % Career or current job title
+	%~ {\mbox{\textcolor{ItalianRed}{\textbf{\,\,\,Senior Software Engineer}}}} % \linebreak \textcolor{DutchBlue}{\textbf{{\,\,\,Embedded Systems}}}} % Career or current job title
 \end{minipage}
 %~ \hfill % Whitespace between
 \begin{minipage}[t]{0.05\textwidth} % 40% of the page width for the introduction text
@@ -90,7 +90,6 @@
 	\icon{At}{12}{\href{mailto:leon.pozzati@gmail.com}{\small leon.pozzati@gmail.com}}
 \end{minipage}
 
-\vspace{0.5cm}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
@@ -101,48 +100,31 @@
 \begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
     
-    Senior Software Engineer with a strong academic background in 
-    \myHilight{textcolor}{Mathematical Physics} and over 10 years of 
-    experience across \myHilight{textcolor}{fintech}, 
-    \myHilight{textcolor}{semiconductor}, and \myHilight{textcolor}{high-tech industries}.
-     
-    Proven expertise in \myHilight{textcolor}{developing and testing} robust software systems 
-    using \myHilight{textcolor}{C}, \myHilight{textcolor}{C++}, 
-    \myHilight{textcolor}{Python}, and \myHilight{textcolor}{Bash} 
-    in \myHilight{textcolor}{Agile environments}. 
+    Senior C++ Software Engineer with more than \myHilight{textcolor}{10 years of experience} 
+    specialising in \myHilight{textcolor}{low-latency}, \myHilight{textcolor}{performance-critical} 
+    systems across \myHilight{textcolor}{fintech}, \myHilight{textcolor}{semiconductor}, 
+    and \myHilight{textcolor}{high-tech} industries. 
     
-    Recognized for being \myHilight{textcolor}{results-oriented}, 
-    \myHilight{textcolor}{collaborative}, and \myHilight{textcolor}{adaptable}, 
-    with the ability to \myHilight{textcolor}{work effectively} 
-    both \myHilight{textcolor}{independently} and in 
-    \myHilight{textcolor}{cross-functional teams}. 
+    I built proprietary \myHilight{textcolor}{FX trading infrastructure} 
+    with \myHilight{textcolor}{$150\sim250\mu$s messaging latency} and 
+    having a \myHilight{textcolor}{throughput} of \myHilight{textcolor}{over 0.8M messages/sec} 
+    at \myHilight{textcolor}{ProMarket}. 
     
-    %~ Alongside my professional path, I’ve also tutored students in mathematics 
-    %~ and physics for years—an experience that sharpened my ability to 
-    %~ communicate complex ideas with clarity and precision.
-    %~ Passionate about continuous learning, mentoring, and delivering 
-    %~ high-quality, scalable solutions.
-	%~ \mbox{I am an Italian Senior Software Engineer,} 
-	%~ \linebreak
-	%~ \mbox{with a sound background in Mathematical Physics,}
-	%~ \mbox{and worked in several fields before moving to}
-	%~ \linebreak
-	%~ \mbox{the Netherlands on 6th of April 2022.}
-	%~ \linebreak
-	%\mbox{I like to think of myself as a serious professional,}
-	%~ \mbox{My colleagues would descrive me as a serious professional,}
-	%~ \linebreak
-	%~ \mbox{strongly driven and project oriented.}
-	%~ \linebreak
-	%~ \mbox{With a lot to learn, I find interesting and challenging}
-	%~ \linebreak
-	%~ \mbox{to grow both with junior and more experienced Engineers,}
-    %~ \linebreak
-    %~ \mbox{able to focus on solitary projects as well.}
-	%~ \linebreak
-	%~ \mbox{I've been told I can make outstanding presentations.}
-	%~ \linebreak
-	%~ \mbox{I am better in person though.}
+    \mbox{Expert in \myHilight{textcolor}{C++17}, \myHilight{textcolor}{ZeroMQ}, 
+    \myHilight{textcolor}{lock-free concurrency}}, \mbox{\myHilight{textcolor}{Linux kernel tuning}, 
+    \myHilight{textcolor}{latency-optim. techniques}}. 
+    
+    Proven ability to develop robust software systems using \myHilight{textcolor}{C}, 
+    \myHilight{textcolor}{C++}, \myHilight{textcolor}{Python}, 
+    and \myHilight{textcolor}{Bash} in \myHilight{textcolor}{Agile environments}. 
+    
+    \myHilight{textcolor}{Results-oriented}, \myHilight{textcolor}{collaborative}, 
+    and \myHilight{textcolor}{adaptable} \myHilight{textcolor}{team player} experienced 
+    in \myHilight{textcolor}{directly supporting} \myHilight{textcolor}{traders} 
+    and deploying \myHilight{textcolor}{live proprietary}\\
+    \myHilight{textcolor}{strategies}, 
+    with a \myHilight{textcolor}{strong academic foundation} in \myHilight{textcolor}{Mathematical Physics}.    
+
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.15\textwidth} % ghost minipage added to better separate the two displayed
@@ -168,10 +150,75 @@
 	%~ \bubbles{6/\textbf{Linux}, 5/\textbf{Windows}, 6/\textbf{IDEs}, 5/\textbf{Office}, 6/\textbf{Agile}} %, 5/Office Suite}
 %~ \end{center}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{}
+		{Master's Degree in Mathematical Physics - 110/110 cum Laude}
+		{Universita' Roma Tre}
+		{My research work investigates the \myHilight{textcolor}{relaxation to the equilibrium} of a 
+        \myHilight{textcolor}{supersaturated gas} through a \myHilight{textcolor}{critical droplet} 
+        which triggers the \myHilight{textcolor}{phase transition} into liquid.
+        \newline 
+        After writing down both a stochastical and a deterministic \myHilight{textcolor}{mathematical model} 
+        of this metastable thermodynamic system, 
+        I wrote the \myHilight{textcolor}{C++ simulations}, run them and carried out a massive \myHilight{textcolor}{data analysis in Python} 
+        finding out interesting results in the context of \myHilight{textcolor}{Non-Equilibrium Statistical Mechanics}.}
+	\entry
+		{}
+		{Bachelor's Degree in Physics}
+		{Universita' Roma Tre}
+
+	\entry
+		{}
+		{High School}
+		{Pio IX}
+		{Humanities-focused Catholic highschool run by Benedictines Monks.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+    
+	\begin{tabular}{l l}
+    \textbf{Italian} \quad \quad & \,native \\
+	\textbf{English     } & \,C1 - Academic IELTS\\
+    \textbf{Dutch} & \,Self Studying
+
+    \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+    
+	\cvsect{Hobbies}
+    
+	I love Art, open air activities like horse riding and hiking, cooking and reading when home.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Non profit}
+	
+    I try to be a better version of me \linebreak every day, working in charities and \linebreak \mbox{being open mostly.} \linebreak
+    %~ I am currently volunteering in the Open Source DigiLab at Lochal in Tilburg.
+\end{minipage}
+
 %-----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
+\vspace{-0.2cm}
 \cvsect{Experience}
 
 \begin{entrylist}
@@ -196,7 +243,7 @@
                       improve \myHilight{textcolor}{system efficiency and robustness}\\
             %~ \texttt{C/C++/Python/Bash}\slashsep\texttt{Software Design/Development/Testing}\slashsep\texttt{Agile}
          }
-    \vspace{-1.2em}
+
     \entry
         {2024}
         {Senior Software Engineer}
@@ -211,12 +258,11 @@
                       with scripting in \myHilight{textcolor}{Python} 
                       and \myHilight{textcolor}{Bash}\\
             $\bullet$ Followed \myHilight{textcolor}{Agile practices} 
-                      to coordinate development cycles, testing, and 
-                      integration from the\\
-                      \hspace*{0.7em}ground up\\
+                      to coordinate development, testing, and 
+                      integration from the ground up\\
             %~ \texttt{C/C++/Python/Bash}\slashsep\texttt{Software Design/Development/Testing}\slashsep\texttt{Agile}
         }
-    \vspace{-1.2em}
+
 	\entry
 		{2022 -- 2023}
 		{Senior Software Engineer}
@@ -236,29 +282,92 @@
             %~ \texttt{C/C++/Python/Bash}\slashsep\texttt{CI/CD}\slashsep\texttt{Diagnostics/Safety}\slashsep\texttt{Agile}
         }
 
-    \vspace{-1.2em}
 	\entry
 	    {2018 -- 2021}
 	    {Senior Software Engineer}
 	    {ProMarket}
         {
-            $\bullet$ Developed a \myHilight{textcolor}{low-latency messaging framework} 
-                      in \myHilight{textcolor}{C++} and \myHilight{textcolor}{Python} 
-                      using the \myHilight{textcolor}{ZeroMQ} library\\ 
-                      \hspace*{0.7em}\myHilight{textcolor}{to connect trading clients 
-                      with strategy computation servers}\\
-            $\bullet$ Designed and implemented components 
-                      of a \myHilight{textcolor}{sentiment analysis engine} 
-                      to support\\
-                      \hspace*{0.7em}\myHilight{textcolor}{trading decisions based 
-                      on market news and signals}\\
-            $\bullet$ Contributed to \myHilight{textcolor}{backend robustness 
-                      and scalability} in a high-pressure 
-                      \myHilight{textcolor}{fintech startup environment}\\
-            %~ \texttt{C++/Python}\slashsep\texttt{ZeroMQ}\slashsep\texttt{Sentiment Analysis}\slashsep\texttt{Networking/Fintech}
-        }
+            $\bullet$ Built and owned proprietary \myHilight{textcolor}{FX trading infrastructure} 
+                      supporting internal \myHilight{textcolor}{prop trading teams}\\
+                      \hspace*{0.7em}actively deploying firm's own capital.
+        
+            $\bullet$ Designed and implemented a \myHilight{textcolor}{low-latency routing and 
+                      messaging infrastructure} using\\
+                      \hspace*{0.7em}\myHilight{textcolor}{C++17}, \myHilight{textcolor}{Python}, and 
+                      \myHilight{textcolor}{ZeroMQ} (pub/sub, dealer/router and binary star patterns), 
+                      achieving stable\\ 
+                      \hspace*{0.7em}\myHilight{textcolor}{latencies of $150\sim250\mu$s} in 
+                      controlled environments.
+        
+            $\bullet$ Optimised the messaging infrastructure, reducing 
+                      end-to-end \myHilight{textcolor}{median latency 
+                      by circa $50\%$}\\
+                      \hspace*{0.7em}(\myHilight{textcolor}{from $~400\mu$s to $~200\mu$s}) 
+                      via \myHilight{textcolor}{CPU pinning}, 
+                      \myHilight{textcolor}{NUMA-aware memory placement}, 
+                      \myHilight{textcolor}{lock-free queues} 
+                      \hspace*{0.7em}(\myHilight{textcolor}{\texttt{boost::lockfree::queue}}), 
+                      \myHilight{textcolor}{batched socket writes}, and 
+                      \myHilight{textcolor}{lean serialization formats}.
+ 
+            $\bullet$ Scaled message throughput from \myHilight{textcolor}{around $400K$ to over $0.8M$ 
+                      messages/sec}\\
+                      \hspace*{0.7em}by implementing \myHilight{textcolor}{NUMA-aware workload 
+                      partitioning}, \myHilight{textcolor}{epoll-based event loops (EPOLLONESHOT)},\\ 
+                      \hspace*{0.7em}\myHilight{textcolor}{custom cache-aligned allocators}, 
+                      and continuous profiling with \myHilight{textcolor}{perf}, 
+                      \myHilight{textcolor}{Flamegraph}, and 
+                      \hspace*{0.7em}\myHilight{textcolor}{heaptrack}.
 
-    \vspace{-1.2em}
+            $\bullet$ Developed orchestration and coordination services 
+                      for internal strategy deployment, state\\
+                      \hspace*{0.7em}management, and system diagnostics 
+                      (\myHilight{textcolor}{Python, Bash, Docker}).
+ 
+            $\bullet$ Contributed to a proprietary \myHilight{textcolor}{sentiment analysis 
+                      engine} extracting actionable trading signals from\\ 
+                      \hspace*{0.7em}financial news and market data, enabling latency 
+                      and signal quality evaluation in realistic\\ 
+                      \hspace*{0.7em}pre-production conditions.
+ 
+            $\bullet$ \myHilight{textcolor}{Collaborated directly with traders during initial 
+                      production rollouts}, aligning system performance\\ 
+                      \hspace*{0.7em}and operational requirements with trading desk needs.
+ 
+            $\bullet$ Handled \myHilight{textcolor}{production incident debugging}: resolved 
+                      market-open latency spike by replacing\\ 
+                      \hspace*{0.7em}inefficient \myHilight{textcolor}{\texttt{gettimeofday()} 
+                      calls with \texttt{clock\_gettime(CLOCK\_MONOTONIC\_RAW)}},\\ 
+                      \hspace*{0.7em}\myHilight{textcolor}{reducing jitter by approximately $40\%$}.
+
+            $\bullet$ Refactored the risk-checking module with a 
+                      lock-free memory pool, \myHilight{textcolor}{cutting heap allocation}\\ 
+                      \hspace*{0.7em}\myHilight{textcolor}{volume by approximately $30\%$}, 
+                      stabilising peak memory usage under load.
+
+            $\bullet$ Supported live production for more than 18 months, 
+                      \myHilight{textcolor}{managing 10–15K orders/day across}\\
+                      \hspace*{0.7em}\myHilight{textcolor}{ 3–5 FX trading venues}, 
+                      deploying multiple strategies in parallel internally.
+        }
+        %~ Previous block which does not explain in a good way
+        %~ {
+            %~ $\bullet$ Developed a \myHilight{textcolor}{low-latency messaging framework} 
+                      %~ in \myHilight{textcolor}{C++} and \myHilight{textcolor}{Python} 
+                      %~ using the \myHilight{textcolor}{ZeroMQ} library\\ 
+                      %~ \hspace*{0.7em}\myHilight{textcolor}{to connect trading clients 
+                      %~ with strategy computation servers}\\
+            %~ $\bullet$ Designed and implemented components 
+                      %~ of a \myHilight{textcolor}{sentiment analysis engine} 
+                      %~ to support\\
+                      %~ \hspace*{0.7em}\myHilight{textcolor}{trading decisions based 
+                      %~ on market news and signals}\\
+            %~ $\bullet$ Contributed to \myHilight{textcolor}{backend robustness 
+                      %~ and scalability} in a high-pressure 
+                      %~ \myHilight{textcolor}{fintech startup environment}\\
+            %~ % \texttt{C++/Python}\slashsep\texttt{ZeroMQ}\slashsep\texttt{Sentiment Analysis}\slashsep\texttt{Networking/Fintech}
+        %~ }
+
 	\entry
 		{2015 -- 2018} %\\\footnotesize{part time}}
 		{Software Developer}
@@ -335,71 +444,6 @@
         \linebreak
         \myHilight{textcolor}{keeping watch on} \mbox{\myHilight{textcolor}{artworks} during exhibitions.}}
 \end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\vspace{-1.5em}
-
-\cvsect{Education}
-
-\begin{entrylist}
-	\entry
-		{}
-		{Master's Degree in Mathematical Physics - 110/110 cum Laude}
-		{Universita' Roma Tre}
-		{My research work investigates the \myHilight{textcolor}{relaxation to the equilibrium} of a 
-        \myHilight{textcolor}{supersaturated gas} through a \myHilight{textcolor}{critical droplet} 
-        which triggers the \myHilight{textcolor}{phase transition} into liquid.
-        \newline 
-        After writing down both a stochastical and a deterministic \myHilight{textcolor}{mathematical model} 
-        of this metastable thermodynamic system, 
-        I wrote the \myHilight{textcolor}{C++ simulations}, run them and carried out a massive \myHilight{textcolor}{data analysis in Python} 
-        finding out interesting results in the context of \myHilight{textcolor}{Non-Equilibrium Statistical Mechanics}.}
-	\entry
-		{}
-		{Bachelor's Degree in Physics}
-		{Universita' Roma Tre}
-
-	\entry
-		{}
-		{High School}
-		{Pio IX}
-		{Humanities-focused Catholic highschool run by Benedictines Monks.}
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	ADDITIONAL INFORMATION
-%----------------------------------------------------------------------------------------
-
-\begin{minipage}[t]{0.3\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-
-	\cvsect{Languages}
-    
-	\begin{tabular}{l l}
-    \textbf{Italian} \quad \quad & \,native \\
-	\textbf{English     } & \,C1 - Academic IELTS\\
-    \textbf{Dutch} & \,Self Studying
-
-    \end{tabular}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.3\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-    
-	\cvsect{Hobbies}
-    
-	I love Art, open air activities like horse riding and hiking, cooking and reading when home.
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.3\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	\cvsect{Non profit}
-	
-    I try to be a better version of me \linebreak every day, working in charities and \linebreak \mbox{being open mostly.} \linebreak
-    %~ I am currently volunteering in the Open Source DigiLab at Lochal in Tilburg.
-\end{minipage}
 
 \cvsect{Personal Projects}
 \begin{entrylist}
