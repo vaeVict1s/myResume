@@ -1,0 +1,432 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19) reworked on 2023 by Leonardo Pozzati
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Leonardo Pozzati (leon.pozzati@gmail.com)
+% Based on a 
+% Jan Vorisek (jan@vorisek.me) rework
+% of a template by Jan Küster (info@jankuester.com)
+% modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{qrcode} % Required to generate QR code of the link to FontAwesome5 icons
+\usepackage{xcolor}
+\usepackage[pdfauthor={Leonardo Pozzati},
+            pdftitle={Leonardo Pozzati - Resume},
+            pdfsubject={This is the outstanding resume of Leonardo Pozzati},
+            pdfcreator={pdflatex},
+            hidelinks]{hyperref}
+
+\definecolor{greenForName}{RGB}{0,140,69}         
+\definecolor{ItalianRed}{RGB}{205, 33, 42}       
+\definecolor{DutchBlue}{RGB}{0, 61, 165}           
+\definecolor{shadecolor}{RGB}{0,140,69}      
+\definecolor{textcolor}{RGB}{0, 61, 165}      
+
+
+\usepackage[skins]{tcolorbox}
+\definecolor{tpgray}{gray}{0.90}
+\newtcbox\tcbtp{hbox, on line, colback=tpgray, enhanced, frame hidden, boxrule=0pt, 
+    top=-2pt, bottom=-2pt, right=-2pt, left=-2pt, rounded corners}
+\newcommand{\myHilight}[2]{\tcbtp{\textit{\color{#1}{#2}}}}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.55\textwidth} % It should be 45% of the page width for name, increased to 55% to have the next minipage aligned with the rest of the document
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\,\huge\textcolor{green}{\textbf{\MakeUppercase{Leonardo}}}\normalfont\,}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Pozzati}}}\normalfont}} % Last name
+	
+	\vspace{6pt}
+	
+	{\mbox{\textcolor{ItalianRed}{\textbf{\,\,\,Senior Software Engineer}}}} % \linebreak \textcolor{DutchBlue}{\textbf{{\,\,\,Embedded Systems}}}} % Career or current job title
+\end{minipage}
+%~ \hfill % Whitespace between
+\begin{minipage}[t]{0.05\textwidth} % 40% of the page width for the introduction text
+\end{minipage}
+%~ \hfill % Whitespace between
+\begin{minipage}[t]{0.25\textwidth} % 30% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	%~ \icon{Home}{12}{\small\href{https://goo.gl/maps/fXe4xLSt1rT5tuoG6}{Hontenissestraat 45, Tilburg}}\\
+	\icon{Home}{12}{\small\href{https://goo.gl/maps/fXe4xLSt1rT5tuoG6}{Tilburg}}\\
+    % In the third parameter, the text, there is an href to directly call the phone number and a flag of the country
+    \icon{Phone}{6}{\small \href{tel:+393347108340}{\worldflag[width=2mm]{IT} \texttt{+39\,334\,710\,8340}}} \\
+    \icon{Phone}{6}{\small \href{tel:+31629808909}{\worldflag[width=2mm]{NL} \texttt{+31\,6\,2980\,8909}}} \\
+\end{minipage}
+\begin{minipage}[t]{0.30\textwidth} % 25% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	%~ \icon{Github}{8}{\href{https://github.com/vaeVict1s}{github}}\\
+	%~ \icon{Linkedin}{8}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{linkedIn}}\\
+	\icon{At}{12}{\href{mailto:leon.pozzati@gmail.com}{\small leon.pozzati@gmail.com}}
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\mbox{I am an Italian Senior Software Engineer,} 
+	\linebreak
+	\mbox{with a sound background in Mathematical Physics,}
+	\mbox{and worked in several fields before moving to}
+	\linebreak
+	\mbox{the Netherlands on 6th of April 2022.}
+	\linebreak
+	%~ \mbox{I like to think of myself as a serious professional,}
+	\mbox{My colleagues would descrive me as a serious professional,}
+	\linebreak
+	\mbox{strongly driven and project oriented.}
+	\linebreak
+	\mbox{With a lot to learn, I find interesting and challenging}
+	\linebreak
+	\mbox{to grow both with junior and more experienced Engineers,}
+    \linebreak
+    \mbox{able to focus on solitary projects as well.}
+	\linebreak
+	%~ \mbox{I've been told I can make outstanding presentations.}
+	%~ \linebreak
+	%~ \mbox{I am better in person though.}
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.15\textwidth} % ghost minipage added to better separate the two displayed
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.45\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{\textbf{Bash}}{95}
+		\baritem{\textbf{C / C++}}{90}
+		\baritem{\textbf{Python}}{90}
+		\baritem{\textbf{Jenkins}}{95}
+		%~ \baritem{\textbf{PhP/MySQL}}{65}
+		%~ \baritem{\textbf{Papyrus}}{80}
+		\baritem{\textbf{Git}}{90}
+		\baritem{\textbf{UML}}{85}
+	\end{barchart}
+\end{minipage}
+
+%~ \begin{center}
+	%~ \bubbles{6/\textbf{Linux}, 5/\textbf{Windows}, 6/\textbf{IDEs}, 5/\textbf{Office}, 6/\textbf{Agile}} %, 5/Office Suite}
+%~ \end{center}
+
+%-----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+    
+    \entry
+        {2025}
+        {Senior Software Engineer}
+        {Thermo Fisher Scientific}
+        {I worked on \myHilight{textcolor}{optics automation} 
+        for the TEMs (Transmission Electrons Microscopes) used in the 
+        \myHilight{textcolor}{semiconductor field}.
+        \linebreak{}
+        \texttt{C/C++/Python/Bash}\slashsep\texttt{Software Design/Development/Testing}
+         \slashsep\texttt{Agile}}
+    \entry
+        {2024}
+        {Senior Software Engineer}
+		{ASML}
+		{\mbox{I worked on a project at \textcolor{DutchBlue}{\textbf{ASML}} as part of 
+        a team dedicated to the \myHilight{textcolor}{implementation 
+        from scratch}}
+        \linebreak
+        \mbox{of a new \myHilight{textcolor}{universal light system} for the 
+        \myHilight{DutchBlue}{lithography systems}.} 
+        %~ my main contribution was}
+        \linebreak
+        %~ \mbox{}
+        %~ \linebreak
+        %~ \mbox{My contribution is \myHilight{textcolor}{implementing, 
+        %~ testing and integrating}} 
+        %~ \linebreak 
+        %~ \mbox{\myHilight{textcolor}{new code}},
+        %~ \linebreak{}
+        \texttt{C/C++/Python/Bash}\slashsep\texttt{Software Design/Development/Testing}
+                 \slashsep\texttt{Agile}}
+
+	\entry
+		{2022 -- 2023}
+		{Senior Software Engineer}
+		{ASML}
+		{\mbox{I was assigned to \textcolor{DutchBlue}{\textbf{ASML}} as part of 
+        an out-farmed team dedicated to the 
+        \myHilight{textcolor}{Safety and Diagnostic}} 
+        %~ my main contribution was}
+        \linebreak
+        \mbox{of the \myHilight{DutchBlue}{lithography systems}.}
+        \linebreak
+        \mbox{My main contribution was \myHilight{textcolor}{helping the team robustness}, 
+        \myHilight{textcolor}{implementing, testing and integrating}} 
+        \linebreak 
+        \mbox{both \myHilight{textcolor}{new and legacy code},
+        \myHilight{textcolor}{integrating CICD}  
+        in collaboration with the \myHilight{textcolor}{local T\&I team}} 
+		\linebreak
+		\mbox{and writing part of the 
+        \myHilight{textcolor}{software design for the High-NA EUV machine}.} 
+        \linebreak{}
+        \texttt{C/C++/Python/Bash}\slashsep\texttt{Software Design/Development/Testing}
+                 \slashsep\texttt{Agile}}
+
+	\entry
+	    {2018 -- 2021}
+	    {Senior Software Engineer}
+	    {ProMarket}
+	    {\mbox{I worked for the \myHilight{textcolor}{fintech startup} ProMarket, 
+        developing in Python and in C++ a \myHilight{textcolor}{networking}} 
+        \linebreak 
+        \mbox{\myHilight{textcolor}{framework} between the investment clients 
+        and the strategy-computing servers}
+        \linebreak{}
+        \mbox{on top of the \myHilight{textcolor}{ZeroMq} library. 
+        I also developed in Python part of a \myHilight{textcolor}{sentiment analysis engine}.}
+        \linebreak{}
+        \texttt{C/C++/Python/Bash}\slashsep\texttt{Networking/ZMQ}\slashsep\texttt{Machine Learning}}
+
+	\entry
+		{2015 -- 2018} %\\\footnotesize{part time}}
+		{Software Developer}
+		{Eveilidia}
+        {\mbox{I worked for Eveilidia, an IT company. My job was the 
+        \myHilight{textcolor}{debugging and maintaining} of an} 
+        \linebreak  
+        \mbox{\myHilight{textcolor}{on-demand book-publisher websites’ back-end} running on Linux Fedora.}
+        \linebreak{}    
+        \texttt{Bash/Python}\slashsep\texttt{Fedora Linux}\slashsep\texttt{Web Services}}
+
+	\entry
+		{2012 -- 2013\\\footnotesize{freelance}}
+		{Developer and Tester}
+		{Ubuntu Italian Community Forum}
+        {\mbox{I proposed the \myHilight{textcolor}{idea} and took part in the 
+        \myHilight{textcolor}{development} of a \myHilight{textcolor}{command line parser}, 
+        a C version of}
+        \linebreak{}
+        \mbox{the Python \myHilight{textcolor}{argparse module}.} 
+        \linebreak{}
+        \mbox{It is available for \myHilight{textcolor}{free download and use} 
+        on GitHub: \href{https://github.com/Vincenzo1968/myoptParser}{Vincenzo1968/myoptParser}}
+        \linebreak{}
+        \texttt{Python / C}\slashsep\texttt{Bash}\slashsep\texttt{FOSS}\slashsep\texttt{Remote Colab}}
+
+	\entry
+		{2010 -- 2012} %\\\footnotesize}
+		{PHP - MySQL Developer}
+		{SirCup}
+		{\mbox{For SirCup, a company which organizes sport 
+        tournaments,} I \myHilight{textcolor}{developed and maintained MySQL} databases 
+        and relative \myHilight{textcolor}{data-handling and presentation PHP routines}, 
+        specifically for their soccer tournaments.
+        \linebreak{}
+        \texttt{PHP / MySQL}\slashsep\texttt{data-handling}}
+
+	%~ \entry
+		%~ {2006 -- open\\\footnotesize{part time}}
+		%~ {Owner}
+		%~ {Almalu Trastevere - Cocktail Bar}
+		%~ {My family started from scratch a business in entertainment, 
+        %~ mainly frequented by \mbox{English-speaking} customers. This gave me, moreover, 
+        %~ the opportunity of improving my language skills on a daily basis. 
+        %~ This business is still working and managed by my mother and older brother.}
+	
+    \entry
+	    { Miscellanea }
+	    {}
+	    {}
+	    {\mbox{After I won a scholarship, I worked for a year as a \myHilight{textcolor}{librarian} 
+        in Roma 3 University library.} \linebreak \mbox{I’ve been \myHilight{textcolor}{tutoring students 
+        in mathematics and physics} for several years, preparing them for} 
+        \linebreak 
+        \mbox{any grade level, especially from high school to univeristy.}
+        \linebreak{}
+        \mbox{I worked for a couple of years at Chiostro del Bramante, 
+        a museum in Roma,}
+        \linebreak
+        \myHilight{textcolor}{keeping watch on} \mbox{\myHilight{textcolor}{artworks} during exhibitions.}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{}
+		{Master's Degree in Mathematical Physics - 110/110 cum Laude}
+		{Universita' Roma Tre}
+		{My research work investigates the \myHilight{textcolor}{relaxation to the equilibrium} of a 
+        \myHilight{textcolor}{supersaturated gas} through a \myHilight{textcolor}{critical droplet} 
+        which triggers the \myHilight{textcolor}{phase transition} into liquid.
+        \newline 
+        After writing down both a stochastical and a deterministic \myHilight{textcolor}{mathematical model} 
+        of this metastable thermodynamic system, 
+        I wrote the \myHilight{textcolor}{C++ simulations}, run them and carried out a massive \myHilight{textcolor}{data analysis in Python} 
+        finding out interesting results in the context of \myHilight{textcolor}{Non-Equilibrium Statistical Mechanics}.}
+	\entry
+		{}
+		{Bachelor's Degree in Physics}
+		{Universita' Roma Tre}
+		{}
+	\entry
+		{}
+		{High School}
+		{Pio IX}
+		{Humanities-focused Catholic highschool run by Benedictines Monks.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+    
+	\begin{tabular}{l l}
+    \textbf{Italian} \quad \quad & \,native \\
+	\textbf{English     } & \,C1 - Academic IELTS\\
+    \textbf{Dutch} & \,Self Studying
+
+    \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+    
+	\cvsect{Hobbies}
+    
+	I love Art, open air activities like horse riding and hiking, cooking and reading when home.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Non profit}
+	
+    I try to be a better version of me \linebreak every day, working in charities and \linebreak \mbox{being open mostly.} \linebreak
+    %~ I am currently volunteering in the Open Source DigiLab at Lochal in Tilburg.
+\end{minipage}
+
+\cvsect{Personal Projects}
+\begin{entrylist}
+    \entry{}
+    {3D Scanner}
+    {}
+    {Along with the \myHilight{textcolor}{Open Source Lab at Lochal Library} in Tilburg, 
+    I am building a 3D scanner based on the \myHilight{textcolor}{OpenScan} project.
+    %~ % \newline{}
+    The idea is to have fun learning the fundamentals of \myHilight{textcolor}{stereophotogrammetry}
+    and \myHilight{textcolor}{3D scanning and printing}.}
+    \entry{}
+    {Domotics and IoT}
+    {}
+    {I am assembling a \myHilight{textcolor}{modular home assitant},
+    in a project that started with a manager for the garden and the automation of an Ikea roller blind.
+    \newline
+    The frame is 3D-printed with the support of Lochal library,  
+    prototype schematics and circuit board's layout are made with \myHilight{textcolor}{KiKad}, 
+    and the software runs on a \myHilight{textcolor}{Raspberry Pi 4}.}   
+    \entry{}
+    {Chat Bot Training}
+    {}
+    {In order to \myHilight{textcolor}{train a chat bot on a specific domain}, 
+    I am writing a Software Engineering Notebook with a massive list of references.
+    \newline
+    This project \myHilight{textcolor}{ purpose is mostly educative}.}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+\cvsect{Socials}
+
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+    \qrcode[height=0.3in]{https://github.com/vaeVict1s}                           \quad \icon{Github}{10}{\href{https://github.com/vaeVict1s}{ \small github.com/vaeVict1s}}\\ \\
+    
+    
+	\qrcode[height=0.3in]{https://www.linkedin.com/in/leonardo-pozzati-4769471bb} \quad \icon{Linkedin}{10}{\href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{ \small in/leonardo-pozzati-4769471bb}}\\ \\
+
+
+    \qrcode[height=0.3in]{mailto:leon.pozzati@gmail.com}                          \quad \icon{At}{10}{\href{mailto:leon.pozzati@gmail.com}{ \small leon.pozzati@gmail.com}}
+
+\end{minipage}
+\hfill
+\end{document}
+
+
+	%~ \entry
+		%~ {2023 -- 2024}
+        %~ {Personal Projects}
+        %~ {}
+        %~ {Since June 2023 I have been working on a few personal projects and took a period off to manage some bureaucracy in Italy.\\
+        %~ The personal projects are listed below
+        %~ \begin{itemize}
+            %~ \item \textbf{3S Scanner} Along with the 
+                  %~ \myHilight{textcolor}{Open Source Lab at Lochal Library} 
+                  %~ in Tilburg, I am building a 3D scanner based on the 
+                  %~ \myHilight{textcolor}{OpenScan} project.
+                  %~ The idea is to have fun learning the fundamentals of 
+                  %~ \myHilight{textcolor}{stereophotogrammetry} and 
+                  %~ \myHilight{textcolor}{3D scanning and printing}.
+            %~ \item \textbf{Domotics and IoT} I am assembling a 
+                  %~ \myHilight{textcolor}{modular home assitant}, 
+                  %~ in a project that started with a manager for the garden 
+                  %~ and the automation of an Ikea roller blind.
+                  %~ \newline
+                  %~ The frame is 3D-printed, prototype schematics and circuit 
+                  %~ board's layout are made with \myHilight{textcolor}{KiKad}, 
+                  %~ and the software runs on a \myHilight{textcolor}{Rasbperry Pi 4}.
+            %~ \item \textbf{Chatbot Training} In order to 
+                  %~ \myHilight{textcolor}{train a chat bot on a specific domain}, 
+                  %~ I am writing a Software Engineering Notebook with a 
+                  %~ massive list of references.
+                  %~ \newline{}
+                  %~ This project \myHilight{textcolor}{ purpose is mostly educative}.
+        %~ \end{itemize}
+        %~ }
