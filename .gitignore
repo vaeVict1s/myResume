@@ -32,7 +32,6 @@ output/
 .DS_Store
 
 # TeXStudio e altri IDE
-*.gz
 *.acn
 *.acr
 *.alg
@@ -42,4 +41,7 @@ output/
 *.ist
 *.maf
 *.mtc*
+*.bcf
 *.run.xml
+*-blx.bib
+*-blx.bib.pdf

@@ -1,0 +1,284 @@
+\documentclass[letterpaper,10pt]{article}
+
+% =========================================================================
+% CONFIGURAZIONE FONT E CODIFICA (Ottimizzata per ATS e font moderni)
+% =========================================================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}    % Consente l'uso diretto di accenti (es. à, è, ì)
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor} % Sostituito 'color' con il più moderno 'xcolor'
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Forza la generazione di un PDF leggibile dagli ATS (Text-searchable)
+\pdfgentounicode=1
+
+% --- Opzione A: ROBOTO (Attuale) ---
+%~ \usepackage[sfdefault]{roboto}
+
+% --- Opzione B: INTER (Super moderno/Tech) ---
+\usepackage[sfdefault]{inter}
+
+% --- Opzione C: HELVETICA (Classico Corporate) ---
+%~ \usepackage[scaled=0.92]{helvet}
+%~ \renewcommand{\familydefault}{\sfdefault}
+
+% --- Opzione D: Lato (Molto elegante, leggermente più morbido e umano) ---
+%~ \usepackage[default]{lato}
+
+% --- Opzione E: EB GARAMOND (Elegante/Accademico con le grazie) ---
+%~ \usepackage{ebgaramond}
+
+% --- Opzione F: Charter (Solido/Robusto e leggibile anche a dimensioni ridotte) ---
+%~ \usepackage{charter}
+
+% --- Opzione G: TeX Gyre Pagella (Una bellissima reinterpretazione del Palatino, molto equilibrato) ---
+%~ \usepackage{tgpagella}
+
+
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+% =========================================================================
+% STILE DELLE SEZIONI (Personalizzato NavyBlue)
+% =========================================================================
+\definecolor{NavyBlue}{RGB}{0, 32, 96}
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries\color{NavyBlue}
+}{}{0em}{}[\color{NavyBlue}\titlerule \vspace{-4pt}]
+
+% =========================================================================
+% STILE DELLE SEZIONI (Non personalizzato NavyBlue)
+% =========================================================================
+%~ \titleformat{\section}{
+  %~ \vspace{-5pt}\scshape\raggedright\large\bfseries
+%~ }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% =========================================================================
+% MACRO PERSONALIZZATE (Ambiente di sviluppo del layout)
+% =========================================================================
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+% =========================================================================
+% INIZIO DEL CORPO DEL CV
+% =========================================================================
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    \textbf{\Huge \scshape Leonardo Pozzati} \\ \vspace{4pt}
+    \small Tilburg, Netherlands $|$ +39 334 710 8340 $|$ +31 6 29808909 \\ \vspace{2pt}
+    \href{mailto:leon.pozzati@gmail.com}{leon.pozzati@gmail.com} $|$ 
+    \href{https://github.com/vaeVict1s}{github.com/vaeVict1s} $|$ 
+    \href{https://www.linkedin.com/in/leonardo-pozzati-4769471bb}{linkedin.com/in/leonardo-pozzati}
+\end{center}
+
+% --- PROFESSIONAL SUMMARY ---
+\section*{Profile}
+\small{Senior Software Engineer and Systems Engineer with over 10 years 
+of experience specializing in low-latency, performance-critical systems 
+across fintech and high-tech industries. Proven track record of building 
+proprietary FX trading infrastructure processing 0.8M+ messages/sec 
+with sub-250$\mu$s latency. 
+\newline
+Combines a rigorous academic foundation in Mathematical Physics with 
+deep expertise in C++17/20, lock-free concurrency, and Python data analysis pipelines.}
+
+% --- EDUCATION ---
+\section{Education}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+      {Università degli Studi Roma Tre}{Roma, Italy}
+      {Master's Degree in Mathematical Physics -- 110/110 cum Laude}{}
+      \begin{itemize}[leftmargin=0.1in]
+        \resumeItem{Research on the relaxation to the equilibrium of 
+        supersaturated gases through critical droplets in metastable thermodynamic systems.}
+        \resumeItem{Designed and implemented stochastic and deterministic 
+        mathematical models; developed high-performance C++ simulations 
+        and executed massive data analysis pipelines in Python within 
+        Non-Equilibrium Statistical Mechanics.}
+      \end{itemize}
+    \resumeSubheading
+      {Università degli Studi Roma Tre}{Roma, Italy}
+      {Bachelor's Degree in Physics}{}
+  \end{itemize}
+
+% --- TECHNICAL SKILLS ---
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages:}{ C, C++, Python, Bash, SQL, Linux, OOP and UML.} \\
+     \textbf{Quantitative \& Analytics:}{ Mathematical Physics, Statistical Mechanics, 
+     Time-Series Analysis, Machine Learning (MLP, LSTM, TCN, Transformers), Signal Evaluation.} \\
+     \textbf{Low-Latency \& Systems:}{ Multi-threading, Lock-free Concurrency, 
+     Memory Management (NUMA-aware, custom cache-aligned allocators), 
+     Linux Kernel Tuning, Linux \texttt{epoll} event loops.} \\
+     \textbf{Tools \& Infrastructure:}{ ZeroMQ, CI/CD (Jenkins), Git, 
+     Docker, Profiling (\texttt{perf}, Flamegraphs, \texttt{heaptrack}), Agile Methodologies.}
+    }}
+ \end{itemize}
+
+% --- EXPERIENCE ---
+\section{Professional Experience}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+
+    \resumeSubheading
+      {Thermo Fisher Scientific}{Eindhoven, Netherlands}
+      {\textbf{Software Designer}}{2025 -- Present}
+      \begin{itemize}
+        \resumeItem{Develop and maintain core automation software for T
+        ransmission Electron Microscopes (TEMs) applied to semiconductor 
+        chip anomaly detection.}
+        \resumeItem{Collaborate on low-level architectural design, 
+        development, and testing of efficiency-critical software modules 
+        utilizing C/C++, Python, and Bash in Agile environments.}
+      \end{itemize}
+
+    \resumeSubheading
+      {ASML}{Veldhoven, Netherlands}
+      {\textbf{Senior Software Engineer} - Universal Light System}{2024}
+      \begin{itemize}
+        \resumeItem{Joined a core team responsible for building a new 
+        universal light system for ASML’s lithography machines.}
+        \resumeItem{Designed and implemented software modules using C/C++, 
+        with scripting in Python and Bash.}
+        \resumeItem{Followed Agile practices to coordinate development, 
+        testing, and integration from the ground up.}
+      \end{itemize}
+      
+    \resumeSubheading
+      {ASML}{Veldhoven, Netherlands}
+      {\textbf{Senior Software Engineer} - Safety and Diagnostic}{2022 - 2024}
+      \begin{itemize}
+        \resumeItem{Assigned to the core Safety and Diagnostic team for 
+        the ASML's High-NA EUV lithography platform.}
+        \resumeItem{Improved system robustness by integrating, refactoring, 
+        and testing both new and legacy code.}
+        \resumeItem{Collaborated with the T\&I (Test \& Integration) team 
+        to integrate CI/CD pipelines and streamline deployments in the 
+        way of working of the team.}
+        \resumeItem{Authored the software design documentation for 
+        safety-critical components.}
+        \resumeItem{Collaborated with mechanical engineers in the testing 
+        and validation of multiple physical machine subsystems, 
+        providing software support, diagnostics and issue investigation.}
+      \end{itemize}
+    
+    \newpage
+    \resumeSubheading
+      {ProMarket}{Rome, Italy}
+      {\textbf{Senior Software Engineer / Quant Developer}}{2018 -- 2021}
+      \begin{itemize}
+        \resumeItem{Built and owned proprietary high-frequency FX trading 
+        infrastructure supporting internal prop trading teams deploying 
+        firm capital.}
+        \resumeItem{Designed and implemented a low-latency routing and 
+        messaging framework using C++17, Python, and ZeroMQ 
+        (pub/sub, dealer/router, binary star), achieving consistent 
+        production latencies of 150--250$\mu$s.}
+        \resumeItem{Reduced end-to-end median messaging latency by 50\% 
+        (from 400$\mu$s to 200$\mu$s) via CPU pinning, NUMA-aware workload 
+        partitioning, \texttt{boost::lockfree::queue}, and lean 
+        serialization formats.}
+        \resumeItem{Scaled messaging throughput from 400K to over 0.8M 
+        messages/sec by implementing epoll-based event loops 
+        \newline
+        (\texttt{EPOLLONESHOT}), custom cache-aligned allocators, 
+        and continuous profiling using \texttt{perf}, Flamegraphs, 
+        and \texttt{heaptrack}.}
+        \resumeItem{Refactored the real-time risk-checking module with 
+        a lock-free memory pool, cutting heap allocation volume under 
+        peak load by 30\% and stabilizing memory footprint.}
+        \resumeItem{Resolved market-open production latency spikes by 
+        replacing inefficient \texttt{gettimeofday()} calls with 
+        \newline
+        \texttt{clock\_gettime(CLOCK\_MONOTONIC\_RAW)}, successfully 
+        reducing latency jitter by 40\%.}
+        \resumeItem{Developed orchestration and coordination services 
+        for internal strategy deployment, state management, and system 
+        diagnostics using Python, Bash, and Docker.}
+        \resumeItem{Contributed to a proprietary financial sentiment 
+        analysis engine, extracting quantitative trading signals from 
+        market data and news feeds to evaluate pre-production signal quality.}
+        \resumeItem{Collaborated directly with traders during initial 
+        production rollouts, aligning system performance and operational 
+        requirements with trading desk needs.}
+        \resumeItem{Supported live production for 18+ months, managing 
+        10--15K orders/day across 3--5 FX trading venues with multiple 
+        parallel execution strategies.}
+      \end{itemize}
+
+  \end{itemize}
+
+% --- PERSONAL PROJECTS ---
+\section{Key Projects}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeProjectHeading
+      {\textbf{WOPR} $|$ \emph{Personal Quant \& ML Trading Project}}{}
+      \begin{itemize}
+        \resumeItem{Engineered an end-to-end quantitative pipeline in 
+        Python for processing CME sessionized Nasdaq futures data.}
+        \resumeItem{Implemented range-bar feature engineering, 
+        Time-to-Horizon (TTH) label generation, and trained multi-model 
+        deep learning architectures including MLP, LSTM, TCN, and Transformers.}
+        \resumeItem{Enhanced pipeline reproducibility and system robustness 
+        by unifying core labeling logic and integrating checkpoint-driven 
+        scaling and metadata tracking across train, evaluation, and 
+        inference cycles.}
+      \end{itemize}
+    \resumeProjectHeading
+      {\textbf{Domain-Specific Chatbot Training} $|$ \emph{Educational Software Engineering Notebook}}{}
+      \begin{itemize}
+        \resumeItem{Developing a structured, reference-heavy knowledge 
+        base and data compilation pipeline focused on optimizing 
+        LLMs for specific engineering domains.}
+      \end{itemize}
+  \end{itemize}
+
+% --- LANGUAGES ---
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+     \textbf{Italian:}{ Native} $|$ 
+     \textbf{English:}{ C1 - Academic IELTS} $|$ 
+     \textbf{Dutch:}{ Self-studying}
+   }}
+ \end{itemize}
+
+\end{document}
